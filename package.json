@@ -1,0 +1,30 @@
+{
+  "name": "internationaltour",
+  "description": "International Tour s.r.o.",
+  "version": "1.0.0",
+  "source": "src/index.html",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpaukov/internationaltour.git"
+  },
+  "keywords": [
+    "internationaltour"
+  ],
+  "author": "Michael Paukov, <Michael.Paukov@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mpaukov/internationaltour/issues"
+  },
+  "homepage": "https://github.com/mpaukov/internationaltour#readme",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}

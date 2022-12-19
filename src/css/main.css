@@ -1,0 +1,47 @@
+.links {
+  text-decoration: none;
+}
+
+.container {
+  min-width: 200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+  z-index: 2;
+}
+
+.pageHeader > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+  color: #0000ff;
+  font-size: 24px;
+}
+
+.buttonMenu {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: #000000;
+  outline: none;
+}
