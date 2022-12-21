@@ -1,0 +1,19 @@
+.button__menu {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: #000000;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #0000ff;
+  }
+}

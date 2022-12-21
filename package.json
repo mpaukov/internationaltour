@@ -23,8 +23,12 @@
     "start": "parcel",
     "build": "parcel build"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "buffer": "^5.7.1",
     "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.2.1"
   }
 }

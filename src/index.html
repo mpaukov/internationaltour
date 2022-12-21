@@ -8,19 +8,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./sass/main.scss" />
     <title>International Tour s.r.o.</title>
   </head>
   <body>
-    <header class="pageHeader">
+    <header class="header">
       <div class="container">
         <a class="links logo" href="./index.html">International Tour s.r.o.</a>
         <button
-          class="buttonMenu"
+          class="button__menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
           <svg
+            class="icon__menu"
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             width="32"
@@ -32,5 +33,8 @@
         </button>
       </div>
     </header>
+
+    <div class="gallery"></div>
+    <script src="../index.js" type="module"></script>
   </body>
 </html>
