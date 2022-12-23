@@ -8,15 +8,19 @@ const load = new ServiceAPI();
 let i: number = Math.floor(Math.random() * cities.length);
 loadPicture();
 
-setInterval(loadPicture, 10000);
+setInterval(loadPicture, 15000);
 
 function loadPicture(): void {
-  gallery.innerHTML = '';
   load.searchQuery = cities[i];
   const test = load.getPictures();
-  test.then(data =>
-    gallery.insertAdjacentHTML('beforeend', markup(data.data.hits)),
-  );
+
+  test.then(data => {
+    if (data.data.hits.length >= 6) {
+      gallery.innerHTML = '';
+      gallery.insertAdjacentHTML('beforeend', markup(data.data.hits));
+    }
+  });
+
   i++;
   if (i >= cities.length) {
     i = 0;
@@ -27,7 +31,7 @@ function markup(data: { webformatURL: string; tags: string }[]): string {
   return data
     .map(({ webformatURL, tags }) => {
       return `
-  <div class="img__gallery">  
+  <div class="thumb__gallery">  
     <img src="${webformatURL}" alt="${tags}" loading="lazy" />  
   </div>`;
     })
