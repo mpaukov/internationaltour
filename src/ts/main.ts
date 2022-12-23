@@ -18,6 +18,8 @@ function loadPicture(): void {
     if (data.data.hits.length >= 6) {
       gallery.innerHTML = '';
       gallery.insertAdjacentHTML('beforeend', markup(data.data.hits));
+    } else {
+      loadPicture();
     }
   });
 
