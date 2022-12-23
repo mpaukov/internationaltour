@@ -3,9 +3,6 @@
   "description": "International Tour s.r.o.",
   "version": "1.0.0",
   "source": "src/index.html",
-  "main": "dist/main.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mpaukov/internationaltour.git"
